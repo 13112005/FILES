@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Welcome, Farmer</h1>
+    <form id="yieldForm">
+        <label for="seedName">Seed Name:</label>
+        <input type="text" id="seedName" name="seedName" required>
+        
+        <label for="seedQuantity">Seed Quantity:</label>
+        <input type="number" id="seedQuantity" name="seedQuantity" required>
+        
+        <label for="isGMO">Genetically Modified:</label>
+        <select id="isGMO" name="isGMO" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        
+        <label for="pesticideName">Pesticide Name:</label>
+        <input type="text" id="pesticideName" name="pesticideName" required>
+        
+        <label for="pesticideType">Pesticide Type:</label>
+        <select id="pesticideType" name="pesticideType" required>
+            <option value="Ammonia-Based">Ammonia-Based</option>
+            <option value="Organic">Organic</option>
+        </select>
+        
+        <label for="vendors">Vendors:</label>
+        <textarea id="vendors" name="vendors" placeholder="Vendor1: Quantity, Vendor2: Quantity" required></textarea>
+        
+        <button type="submit">Submit Yield</button>
+    </form>
+
+    <h2>Your Yields</h2>
+    <ul id="yieldList"></ul>
+
+    <script src="/js/farmer-dashboard.js"></script>
+</body>
+</html>

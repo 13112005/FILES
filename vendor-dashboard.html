@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Welcome, Vendor</h1>
+
+    <form id="sellYieldForm">
+        <h2>Sell Yield</h2>
+        <label for="sellTo">Sell To:</label>
+        <select id="sellTo" name="sellTo" required>
+            <option value="Customer">Customer</option>
+            <option value="Vendor">Vendor</option>
+        </select>
+        <label for="yieldName">Yield Name:</label>
+        <input type="text" id="yieldName" name="yieldName" required>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" required>
+        <label for="buyerDetails">Buyer Details:</label>
+        <input type="text" id="buyerDetails" name="buyerDetails" placeholder="Buyer Name or Vendor ID" required>
+        <button type="submit">Sell Yield</button>
+    </form>
+
+    <h2>Your Stock</h2>
+    <ul id="stockList"></ul>
+
+    <h2>Sales History</h2>
+    <ul id="salesList"></ul>
+    <h2>Generate QR Code</h2>
+    <form id="qrCodeForm">
+    <label for="yieldNameForQR">Yield Name:</label>
+    <input type="text" id="yieldNameForQR" name="yieldNameForQR" required>
+    <button type="submit">Generate QR Code</button>
+    </form>
+
+    <div id="qrCodeDisplay">
+        <h3>QR Code:</h3>
+        <img id="qrCodeImage" src="" alt="QR Code will appear here" />
+    </div>
+
+    <script src="/js/vendor-dashboard.js"></script>
+</body>
+</html>

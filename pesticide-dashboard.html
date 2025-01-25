@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesticide Seller Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Welcome, Pesticide Seller</h1>
+
+    <form id="updateStockForm">
+        <h2>Update Pesticide Stock</h2>
+        <label for="pesticideName">Pesticide Name:</label>
+        <input type="text" id="pesticideName" name="pesticideName" required>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" required>
+        <button type="submit">Update Stock</button>
+    </form>
+
+    <h2>Stock Details</h2>
+    <ul id="stockList"></ul>
+
+    <h2>Sales Records</h2>
+    <ul id="salesList"></ul>
+
+    <script src="/js/pesticide-dashboard.js"></script>
+</body>
+</html>
